@@ -175,8 +175,8 @@ a {
 .floating-button {
   font-size: 48px;
   position: absolute;
-  bottom: 24px;
-  right: 16px;
+  bottom: -24px;
+  right: -16px;
   background: var(--color-main);
   border: none;
   width: 60px;
@@ -192,6 +192,8 @@ a {
 
 .floating-button > svg {
   fill: var(--color-bg);
+   width: 30px;
+    height: 30px;
 }
 
 

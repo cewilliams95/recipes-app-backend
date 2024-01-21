@@ -16,7 +16,6 @@ function App() {
             <Route path='/' exact element={<NotesListPage />} />
             <Route path='/note/:id' element={<NotePage />}></Route>
           </Routes>
-        <Footer />
         </div>
       </div>
     </Router>
