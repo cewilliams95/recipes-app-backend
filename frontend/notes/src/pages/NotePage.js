@@ -24,7 +24,7 @@ const NotePage = () => {
   }
 
   let handleSubmit = () => {
-    if(noteId != 'new' && !note.body) {
+    if(noteId !== 'new' && !note.body) {
       deleteNote()
     }
     else if(noteId !== 'new') {
@@ -75,7 +75,7 @@ const NotePage = () => {
         <h3>
           <Link to="/"><BackIcon onClick={handleSubmit} /></Link>
         </h3>
-        {noteId != 'new' ? (
+        {noteId !== 'new' ? (
           <button onClick={deleteNote}>Delete</button>
         ):
         (
