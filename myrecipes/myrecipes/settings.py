@@ -156,6 +156,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
+    'recipes-app-mgct6.ondigitalocean.app',
     'http://localhost:3000',
     'https://recipes.cwilliams.me'
 ]
