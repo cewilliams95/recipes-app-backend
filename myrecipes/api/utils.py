@@ -10,7 +10,10 @@ def getAllRecipes(request):
 def createRecipe(request):
     data = request.data
     recipe = Recipe.objects.create(
-        body=data['body']
+	title=data['title'],
+        body=data['body'],
+	ingredients=data['ingredients'],
+	directions=data['directions']
     )
     serializer = RecipeSerializer(recipe, many=False)
     return Response(serializer.data)
@@ -31,4 +34,4 @@ def updateRecipe(request,pk):
 def deleteRecipe(request, pk):
     recipe = Recipe.objects.get(id=pk)
     recipe.delete()
-    return Response('Note was deleted!')
+    return Response('Recipe was deleted!')
